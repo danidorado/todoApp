@@ -1,5 +1,5 @@
 {
-  "name": "03-webpack-init",
+  "name": "04-todoapp",
   "version": "1.0.0",
   "description": "inicializacion webpack",
   "main": "index.js",

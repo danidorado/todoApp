@@ -63,7 +63,7 @@ ulFiltros.addEventListener('click', (event) => {
 
     const listaTareas = divlista.querySelectorAll('li');
     const listaFiltros = ulFiltros.querySelectorAll('.filtro');
-    
+
     const filtro = event.target.text;
 
     listaFiltros.forEach(el => { el.classList.remove('selected') });
@@ -100,6 +100,4 @@ ulFiltros.addEventListener('click', (event) => {
             }
         }
     }
-        
-
 });
