@@ -13,11 +13,11 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/i,
-                exclude: /global\.css$/i,
+                exclude: /styles\.css$/i,
                 use: ['style-loader', 'css-loader'],
             },
             {
-                test: /global\.css$/i,
+                test: /styles\.css$/i,
                 use: [CSSWebpackPlugin.loader,'css-loader'],
             },
             {
@@ -38,11 +38,6 @@ module.exports = {
         new CSSWebpackPlugin({
             filename: '[name].[contenthash].css',
             ignoreOrder: false,
-        }),
-        new CopyPlugin({
-            patterns: [
-                { from: 'src/assets', to: 'assets/' },
-            ],
         }),
     ],
 }
